@@ -1,0 +1,27 @@
+{
+  "name": "secclaw",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --env-file-if-exists=.env dist/main.js",
+    "dev": "tsx --env-file-if-exists=.env src/main.ts",
+    "chat": "tsx --env-file-if-exists=.env src/chat.ts",
+    "setup": "tsx src/setup.ts",
+    "unpair": "node -e \"require('fs').rmSync('data/pairing.json',{force:true})\" && echo unpaired",
+    "pi": "node --env-file-if-exists=.env node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli.js"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^0.87.1",
+    "grammy": "^1.46.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

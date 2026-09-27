@@ -1,0 +1,14 @@
+node_modules/
+dist/
+data/
+.env
+secclaw.json
+workspace/*
+!workspace/.gitkeep
+pi/*
+!pi/AGENTS.md
+!pi/MEMORY.md
+!pi/models.json
+!pi/settings.json
+!pi/skills/
+!pi/extensions/

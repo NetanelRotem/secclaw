@@ -1,0 +1,7 @@
+{
+  "defaultProvider": "openrouter",
+  "defaultModel": "z-ai/glm-5.3-flash",
+  "enabledModels": [
+    "openrouter/z-ai/glm-5.3-flash"
+  ]
+}
